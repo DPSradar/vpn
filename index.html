@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Homo VPN — Твой премиум доступ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: #1a1a1a;
+      }
+
+      /* Красивый анимированный задний фон */
+      .animated-bg {
+        background: linear-gradient(-45deg, #f8fafc, #e2e8f0, #ffffff, #f1f5f9);
+        background-size: 400% 400%;
+        animation: gradientBG 12s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Кастомный градиент для кнопок */
+      .bg-premium-gradient {
+        background: linear-gradient(135deg, #1a1a1a 0%, #374151 100%);
+      }
+      .bg-premium-gradient:hover {
+        background: linear-gradient(135deg, #374151 0%, #1a1a1a 100%);
+      }
+
+      /* Мягкая тень для контейнера */
+      .premium-shadow {
+        box-shadow:
+          0 20px 40px -5px rgba(0, 0, 0, 0.08),
+          0 10px 15px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Выделенные (приоритетные) локации - они кликабельные */
+      .priority-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .priority-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Стандартные карточки локаций - НЕ кликабельные, без эффекта наведения */
+      .location-card-static {
+        cursor: default;
+        transition: border-color 0.2s ease;
+      }
+      .location-card-static:hover {
+        border-color: #d1d5db; /* Только легкое изменение рамки, чтобы не казалось кнопкой */
+      }
+    </style>
+  </head>
+  <body class="flex justify-center min-h-screen animated-bg">
+    <div
+      class="w-full max-w-[480px] bg-white min-h-screen flex flex-col premium-shadow overflow-hidden relative z-10"
+    >
+      <header
+        class="flex justify-between items-center px-6 py-6 border-b border-gray-100"
+      >
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-6 bg-premium-gradient rounded-full"></div>
+          <span
+            class="text-2xl font-extrabold tracking-tighter uppercase text-gray-950"
+            >HOMO VPN</span
+          >
+        </div>
+        <a
+          href="https://api.memory.mts.ru/api/1.0/download/link/content/6FeUjTfqvUSEzNYzw3JzVQ"
+          class="text-xs font-bold bg-premium-gradient text-white px-5 py-2.5 rounded-full uppercase tracking-wider premium-shadow transition hover:opacity-90 active:scale-95"
+        >
+          Скачать
+        </a>
+      </header>
+
+      <section class="px-6 py-12 bg-gray-50/50">
+        <h1
+          class="text-5xl font-extrabold leading-[1.05] tracking-tighter mb-8 text-gray-950"
+        >
+          Твой интернет.<br />
+          <span class="text-gray-400">Свободный.</span><br />
+          Быстрый.<br />
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500"
+            >Бесплатный.</span
+          >
+        </h1>
+        <a
+          href="https://api.memory.mts.ru/api/1.0/download/link/content/6FeUjTfqvUSEzNYzw3JzVQ"
+          class="block w-full"
+        >
+          <button
+            class="w-full bg-premium-gradient text-white font-extrabold py-5 rounded-2xl text-lg uppercase tracking-wider premium-shadow transition hover:opacity-95 active:scale-[0.98]"
+          >
+            Подключиться
+          </button>
+        </a>
+      </section>
+
+      <section class="px-6 py-10 flex-grow">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-3xl font-extrabold tracking-tight text-gray-950">
+            29+ локаций
+          </h2>
+          <span class="text-sm font-semibold text-gray-500"
+            >Скорость:
+            <span class="text-green-600 font-bold">1 Гбит/с</span></span
+          >
+        </div>
+
+        <div class="space-y-4">
+          <div
+            class="priority-card flex items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white premium-shadow"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-2xl">⚡️</span>
+              <div>
+                <span class="block font-bold text-lg text-gray-950"
+                  >Умная локация</span
+                >
+                <span class="block text-sm font-medium text-gray-500"
+                  >Автовыбор: Восток</span
+                >
+              </div>
+            </div>
+            <span
+              class="w-3 h-3 rounded-full bg-green-500 ring-4 ring-green-100"
+            ></span>
+          </div>
+
+          <div
+            class="priority-card flex items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white premium-shadow"
+          >
+            <div class="flex items-center gap-4">
+              <span class="text-2xl">🇷🇺</span>
+              <div>
+                <span class="block font-bold text-lg text-gray-950"
+                  >Нидерланды (игровая)</span
+                >
+                <span class="block text-sm font-medium text-gray-500"
+                  >Минимальный пинг</span
+                >
+              </div>
+            </div>
+            <span
+              class="w-3 h-3 rounded-full bg-green-500 ring-4 ring-green-100"
+            ></span>
+          </div>
+
+          <div class="relative py-2">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="w-full border-t border-gray-100"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <span class="bg-white px-3 text-sm font-semibold text-gray-400"
+                >Доступные страны</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-2 gap-3 text-base font-semibold text-gray-800"
+          >
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇳🇱 Нидерланды
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🌐 Умная локация
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇫🇮 Финляндия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇩🇪 Германия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇺🇸 США
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇦🇪 ОАЭ
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇱🇹 Литва
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇬🇧 Великобрит...
+            </div>
+          </div>
+
+          <div
+            id="hidden-locations"
+            class="hidden grid grid-cols-2 gap-3 mt-3 text-base font-semibold text-gray-800"
+          >
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇳🇴 Норвегия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇸🇪 Швеция
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇲🇩 Молдова
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇫🇷 Франция
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇨🇭 Швейцария
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇵🇱 Польша
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇹🇷 Турция
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇮🇳 Индия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇧🇷 Бразилия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇷🇺 Россия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇯🇵 Япония
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇭🇰 Гонконг
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇨🇦 Канада
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇮🇪 Ирландия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇮🇹 Италия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇰🇿 Казахстан
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇰🇷 Южная Корея
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
+            >
+              🇦🇺 Австралия
+            </div>
+            <div
+              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white col-span-2 text-center"
+            >
+              🇦🇱 Албания
+            </div>
+          </div>
+
+          <button
+            id="toggle-btn"
+            onclick="toggleLocations()"
+            class="w-full mt-4 py-4 rounded-xl border-2 border-gray-900 text-gray-900 font-bold text-sm uppercase tracking-wide hover:bg-gray-900 hover:text-white transition-colors flex items-center justify-center gap-2"
+          >
+            <span>Развернуть все локации</span>
+            <svg
+              id="toggle-icon"
+              class="w-4 h-4 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <footer
+        class="px-6 py-8 text-center text-gray-400 text-sm border-t border-gray-100 bg-gray-50/50 font-medium space-y-2 mt-auto"
+      >
+        <p>Homo VPN — Твой премиум доступ к интернету.</p>
+        <p class="text-xs text-gray-300">
+          © 2024 Homo VPN. Все права защищены.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      function toggleLocations() {
+        const hiddenGrid = document.getElementById("hidden-locations");
+        const btnText = document.querySelector("#toggle-btn span");
+        const btnIcon = document.getElementById("toggle-icon");
+
+        if (hiddenGrid.classList.contains("hidden")) {
+          // Показываем
+          hiddenGrid.classList.remove("hidden");
+          btnText.textContent = "Скрыть локации";
+          btnIcon.classList.add("rotate-180");
+        } else {
+          // Скрываем
+          hiddenGrid.classList.add("hidden");
+          btnText.textContent = "Развернуть все локации";
+          btnIcon.classList.remove("rotate-180");
+
+          // Легкий скролл назад к началу списка при скрытии
+          document
+            .getElementById("toggle-btn")
+            .scrollIntoView({ behavior: "smooth", block: "end" });
+        }
+      }
+    </script>
+  </body>
+</html>
