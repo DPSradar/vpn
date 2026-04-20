@@ -1,403 +1,1173 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Homo VPN — Твой премиум доступ</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-        color: #1a1a1a;
-      }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fagot VPN — быстрый и безопасный VPN для России 2025</title>
+		<meta name="description" content="Fagot VPN — бесплатный VPN-сервис для защиты приватности. Быстрые серверы, шифрование, безлимитный трафик. 100% бесплатно, без рекламы. Подключение через Telegram за 1 минуту." />
+		<meta name="keywords" content="vpn, впн, vpn россия, приватность, Fagot VPN, быстрый vpn, vpn для стриминга, vpn telegram" />
+		<meta name="author" content="Fagot VPN" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://piplvpn.com/" />
+		<meta property="og:title" content="Fagot VPN — быстрый и безопасный VPN для России" />
+		<meta property="og:description" content="Бесплатный VPN-сервис для защиты приватности. Быстрые серверы, шифрование, безлимитный трафик." />
+		<meta property="og:image" content="https://piplvpn.com/logo.svg" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://piplvpn.com/" />
+		<meta property="twitter:title" content="Fagot VPN — быстрый и безопасный VPN" />
+		<meta property="twitter:description" content="Бесплатный VPN-сервис для защиты приватности в интернете" />
+		<meta property="twitter:image" content="https://piplvpn.com/logo.svg" />
+		
+		<link rel="canonical" href="https://piplvpn.com/" />
 
-      /* Красивый анимированный задний фон */
-      .animated-bg {
-        background: linear-gradient(-45deg, #f8fafc, #e2e8f0, #ffffff, #f1f5f9);
-        background-size: 400% 400%;
-        animation: gradientBG 12s ease infinite;
-      }
+		<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+		<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="Fagot VPN" />
+		<link rel="manifest" href="sprite.svg" />
 
-      @keyframes gradientBG {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
+		
+		<!-- Schema.org разметка -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Fagot VPN",
+			"url": "https://piplvpn.com",
+			"logo": "https://piplvpn.com/logo.svg",
+			"description": "Бесплатный VPN-сервис для защиты приватности в интернете",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"contactType": "Customer Support",
+				"url": "https://t.me/piplvpn_bot"
+			},
+			"sameAs": [
+				"https://t.me/piplvpn_bot"
+			],
+			"offers": {
+				"@type": "Offer",
+				"price": "0",
+				"priceCurrency": "RUB",
+				"availability": "https://schema.org/InStock"
+			}
+		}
+		</script>
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Fagot VPN",
+			"url": "https://piplvpn.com",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://piplvpn.com/blog?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
+		<script type="module" crossorigin src="/modulepreload-polyfill-B5Qt9EMX.js"></script>
+		<script type="module" crossorigin src="/preload-helper-BXl3LOEh.js"></script>
+		<script type="module" crossorigin src="/main-DbpsnItN.js"></script>
+		<link rel="stylesheet" crossorigin href="/main-C08tCNue.css">
+		<script src="/language-switcher.js"></script>
+		<style>
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+			
+			/* Custom Scrollbar */
+			::-webkit-scrollbar {
+				width: 10px;
+				height: 10px;
+			}
+			
+			::-webkit-scrollbar-track {
+				background: rgba(20, 20, 30, 0.8);
+				border-radius: 10px;
+			}
+			
+			::-webkit-scrollbar-thumb {
+				background: linear-gradient(180deg, #FE588B 0%, #8A67FE 50%, #FE588B 100%);
+				border-radius: 10px;
+				border: 2px solid rgba(20, 20, 30, 0.8);
+				background-size: 100% 200%;
+				animation: scrollbarGradient 3s ease infinite;
+			}
+			
+			::-webkit-scrollbar-thumb:hover {
+				background: linear-gradient(180deg, #FF6B9D 0%, #9B7AFF 50%, #FF6B9D 100%);
+				background-size: 100% 200%;
+			}
+			
+			::-webkit-scrollbar-corner {
+				background: rgba(20, 20, 30, 0.8);
+			}
+			
+			@keyframes scrollbarGradient {
+				0%, 100% { background-position: 0% 0%; }
+				50% { background-position: 0% 100%; }
+			}
+			
+			/* Firefox Scrollbar */
+			* {
+				scrollbar-width: thin;
+				scrollbar-color: #FE588B rgba(20, 20, 30, 0.8);
+			}
+			
+			/* Smooth scroll for anchor links */
+			html {
+				scroll-padding-top: 80px;
+			}
+			
+			/* Scroll reveal animations */
+			.section:not(.hero) {
+				opacity: 0;
+				transform: translateY(40px);
+				transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.section.visible {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			
+			/* Hero always visible with fade in */
+			.hero {
+				animation: heroFadeIn 1s ease-out forwards;
+			}
+			
+			@keyframes heroFadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			/* Staggered animation for list items */
+			.advantages-list__item,
+			.features__item {
+				opacity: 0;
+				transform: translateY(25px);
+				transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.advantages-list__item.visible,
+			.features__item.visible {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			
+			/* Stagger delays for list items */
+			.advantages-list__item:nth-child(1) { transition-delay: 0.1s; }
+			.advantages-list__item:nth-child(2) { transition-delay: 0.2s; }
+			.advantages-list__item:nth-child(3) { transition-delay: 0.3s; }
+			.advantages-list__item:nth-child(4) { transition-delay: 0.4s; }
+			
+			.features__item:nth-child(1) { transition-delay: 0.1s; }
+			.features__item:nth-child(2) { transition-delay: 0.2s; }
+			
+			/* ===== GLASSMORPHISM PRICE CARDS ===== */
+			.price-card {
+				background: rgba(255, 255, 255, 0.03) !important;
+				backdrop-filter: blur(20px);
+				-webkit-backdrop-filter: blur(20px);
+				border: 1px solid rgba(255, 255, 255, 0.1) !important;
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.price-card:hover {
+				background: rgba(255, 255, 255, 0.06) !important;
+				border-color: rgba(254, 88, 139, 0.3) !important;
+				transform: translateY(-10px);
+				box-shadow: 
+					0 25px 50px rgba(0, 0, 0, 0.3),
+					0 0 30px rgba(254, 88, 139, 0.1);
+			}
+			
+			/* Popular card glow */
+			.price-card__popular {
+				background: linear-gradient(135deg, #FE588B, #8A67FE) !important;
+				box-shadow: 0 4px 20px rgba(254, 88, 139, 0.5);
+			}
+			
+			/* Checklist items animation */
+			.price-card .checklist__item {
+				transition: transform 0.3s ease;
+			}
+			
+			.price-card:hover .checklist__item {
+				transform: translateX(5px);
+			}
+			
+			/* ===== FLOATING PARTICLES ===== */
+			.particles {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 0;
+				overflow: hidden;
+			}
+			
+			.particle {
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				background: rgba(255, 255, 255, 0.3);
+				border-radius: 50%;
+				animation: floatParticle linear infinite;
+			}
+			
+			.particle:nth-child(odd) {
+				background: rgba(254, 88, 139, 0.3);
+			}
+			
+			.particle:nth-child(even) {
+				background: rgba(138, 103, 254, 0.3);
+			}
+			
+			@keyframes floatParticle {
+				0% {
+					transform: translateY(100vh) rotate(0deg);
+					opacity: 0;
+				}
+				10% {
+					opacity: 1;
+				}
+				90% {
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-100vh) rotate(360deg);
+					opacity: 0;
+				}
+			}
+			
+			/* ===== IMPROVED FAQ ACCORDION ===== */
+			.details__item {
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+				border-radius: 16px !important;
+				overflow: hidden;
+				background: rgba(255, 255, 255, 0.02) !important;
+				border: 1px solid rgba(255, 255, 255, 0.05) !important;
+				margin-bottom: 12px;
+			}
+			
+			.details__item:hover {
+				background: rgba(255, 255, 255, 0.04) !important;
+				border-color: rgba(254, 88, 139, 0.2) !important;
+				transform: translateX(5px);
+			}
+			
+			.details__item::part(summary) {
+				padding: 20px 24px !important;
+				transition: all 0.3s ease !important;
+			}
+			
+			.details__item::part(base) {
+				border: none !important;
+				background: transparent !important;
+			}
+			
+			.details__item::part(content) {
+				padding: 0 24px 20px !important;
+			}
+			
+			.details__icon {
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+				color: #FE588B !important;
+				filter: drop-shadow(0 0 5px rgba(254, 88, 139, 0.3));
+			}
+			
+			.details__item:hover .details__icon {
+				filter: drop-shadow(0 0 10px rgba(254, 88, 139, 0.6));
+				transform: scale(1.1);
+			}
+			
+			.details__item[open] .details__icon {
+				transform: rotate(180deg) !important;
+				color: #8A67FE !important;
+				filter: drop-shadow(0 0 10px rgba(138, 103, 254, 0.6));
+			}
+			
+			.details__item[open] {
+				background: rgba(255, 255, 255, 0.05) !important;
+				border-color: rgba(138, 103, 254, 0.3) !important;
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgba(138, 103, 254, 0.1);
+			}
+			
+			.details__item p[slot="summary"] {
+				transition: all 0.3s ease;
+			}
+			
+			.details__item:hover p[slot="summary"] {
+				color: #FE588B;
+			}
+			
+			.details__item[open] p[slot="summary"] {
+				background: linear-gradient(90deg, #FE588B, #8A67FE);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+			
+			.header__buttons {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+			
+			/* Language Dropdown */
+			.language-dropdown {
+				position: relative;
+				z-index: 1000;
+				display: inline-block;
+			}
+			
+			.language-dropdown__toggle {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 6px;
+				padding: 0;
+				height: 36px;
+				padding-left: 12px;
+				padding-right: 10px;
+				background: rgba(255, 255, 255, 0.08);
+				backdrop-filter: blur(10px);
+				border: 1px solid rgba(255, 255, 255, 0.15);
+				border-radius: 8px;
+				color: #fff;
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: 0.2px;
+				cursor: pointer;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				position: relative;
+				line-height: 1;
+				white-space: nowrap;
+			}
+			
+			.language-dropdown__toggle:focus {
+				outline: none;
+			}
+			
+			.language-dropdown__toggle:hover {
+				background: rgba(255, 255, 255, 0.12);
+				border-color: rgba(255, 255, 255, 0.25);
+				transform: translateY(-1px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			}
+			
+			.language-dropdown__toggle:active {
+				transform: translateY(0) scale(0.98);
+			}
+			
+			.language-dropdown__icon {
+				flex-shrink: 0;
+				opacity: 0.9;
+				transition: transform 0.3s ease;
+				width: 14px;
+				height: 14px;
+				display: block;
+			}
+			
+			.language-dropdown__toggle:hover .language-dropdown__icon {
+				transform: rotate(15deg);
+			}
+			
+			.language-dropdown__arrow {
+				width: 10px;
+				height: 10px;
+				opacity: 0.7;
+				transition: transform 0.3s ease;
+				margin-left: 2px;
+			}
+			
+			.language-dropdown.active .language-dropdown__arrow {
+				transform: rotate(180deg);
+			}
+			
+			.language-dropdown__current {
+				display: inline-block;
+				position: relative;
+				transition: opacity 0.2s ease;
+				line-height: 1;
+			}
+			
+			.language-dropdown__menu {
+				position: absolute;
+				top: calc(100% + 8px);
+				left: 0;
+				min-width: 140px;
+				background: rgba(30, 30, 40, 0.95);
+				backdrop-filter: blur(20px);
+				border: 1px solid rgba(255, 255, 255, 0.15);
+				border-radius: 10px;
+				padding: 6px;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-10px);
+				transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+			}
+			
+			.language-dropdown.active .language-dropdown__menu {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+			
+			.language-dropdown__item {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				padding: 10px 12px;
+				border-radius: 6px;
+				cursor: pointer;
+				transition: all 0.2s ease;
+				color: rgba(255, 255, 255, 0.8);
+				font-size: 13px;
+				font-weight: 500;
+			}
+			
+			.language-dropdown__item:hover {
+				background: rgba(255, 255, 255, 0.1);
+				color: #fff;
+			}
+			
+			.language-dropdown__item.active {
+				background: linear-gradient(135deg, rgba(254, 88, 139, 0.2), rgba(138, 103, 254, 0.2));
+				color: #fff;
+			}
+			
+			.language-dropdown__item-flag {
+				font-size: 16px;
+				line-height: 1;
+			}
+			
+			.language-dropdown__item-name {
+				flex: 1;
+			}
+			
+			.language-dropdown__item-code {
+				font-size: 11px;
+				opacity: 0.6;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+			
+			/* RTL support for Arabic */
+			html[dir="rtl"] .language-dropdown__menu {
+				left: auto;
+				right: 0;
+			}
+			
+			@media (max-width: 768px) {
+				.header__buttons {
+					gap: 8px;
+				}
+				
+				.language-dropdown__toggle {
+					height: 34px;
+					padding-left: 10px;
+					padding-right: 8px;
+					font-size: 12px;
+					gap: 5px;
+				}
+				
+				.language-dropdown__icon {
+					width: 13px;
+					height: 13px;
+				}
+				
+				.language-dropdown__menu {
+					min-width: 130px;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				.header__buttons {
+					gap: 6px;
+				}
+				
+				.language-dropdown__toggle {
+					height: 32px;
+					padding-left: 8px;
+					padding-right: 6px;
+					font-size: 11px;
+					gap: 4px;
+				}
+				
+				.language-dropdown__icon {
+					width: 12px;
+					height: 12px;
+				}
+				
+				.language-dropdown__menu {
+					min-width: 120px;
+					right: 0;
+					left: auto;
+				}
+			}
+			
+			.footer__company {
+				display: inline;
+				margin-left: 4px;
+				font-size: inherit;
+				font-weight: inherit;
+				letter-spacing: 0.8px;
+				color: inherit;
+				text-transform: uppercase;
+				opacity: 0.65;
+				transition: opacity 0.3s ease, letter-spacing 0.3s ease;
+			}
+			
+			.footer__company:hover {
+				opacity: 0.9;
+				letter-spacing: 1px;
+			}
+			
+			@media (max-width: 768px) {
+				.footer__company {
+					margin-left: 3px;
+					letter-spacing: 0.5px;
+				}
+				
+				.footer__company:hover {
+					letter-spacing: 0.7px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Floating Particles -->
+		<div class="particles" id="particles"></div>
+		
+		<header class="header">
+			<div class="container header__main">
+				<a class="header__logo logo" href="/">
+					<img
+						class="logo__img"
+						src="logo.svg"
+						alt="Fagot VPN"
+						width="143"
+						height="40"
+						loading="lazy"
+					/>
+				</a>
+			
+		</div>
+	</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__inner">
+					<div class="hero__logo-symbol-wrapper">
+						<img
+							class="hero__logo-symbol"
+							src="/logo-symbol.svg"
+							aria-hidden="true"
+							loading="lazy"
+							alt=""
+						/>
+					</div>
+					<div class="hero__main container">
+						<div class="hero__heading heading heading_not-indent">
+							<h1 class="h1" data-translate="hero-title">Fagot VPN — сервис для людей, созданного людьми</h1>
+							<p class="heading__subtitle heading__subtitle_large" data-translate="hero-subtitle">
+								Здесь всё просто: подключайся к интернету безопасно и приватно, читай,
+								смотри и делай, что тебе действительно хочется
+							</p>
+						</div>
+						<ul class="features">
+							<li class="features__item">
+								<div class="icon-fill">
+									<svg class="icon-fill__icon icon" aria-hidden="true">
+										<use href="sprite.svg#protection" x="0" y="0" />
+									</svg>
+								</div>
+								<p data-translate="feature-1">
+									Мы верим, что интернет должен быть открытым, а твоя жизнь — приватной. Поэтому
+									Fagot VPN не спрашивает лишнего и не усложняет тебе задачу
+								</p>
+							</li>
+							<li class="features__item">
+								<div class="icon-fill">
+									<svg class="icon-fill__icon icon" aria-hidden="true">
+										<use href="sprite.svg#internet" x="0" y="0" />
+									</svg>
+								</div>
+								<p data-translate="feature-2">Просто выбери страну, нажми «Включить» — и вперёд, за новыми впечатлениями!</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section advantages">
+				<div class="container">
+					<div class="heading">
+						<h2 class="h2" data-translate="why-pipl-title">Почему Fagot </h2>
+						<p class="heading__subtitle" data-translate="why-pipl-subtitle">
+							Потому что мы сами — обычные люди, которые устали от сложных настроек, тайных сборов
+							данных&nbsp;и&nbsp;невнятных объяснений
+						</p>
+					</div>
+					<h3 class="advantages__title h3" data-translate="advantages-title">Всё как для друзей</h3>
+					<ul class="advantages__list advantages-list">
+						<li class="advantages-list__item">
+							<div class="icon-fill">
+								<svg class="icon-fill__icon icon" aria-hidden="true">
+									<use href="sprite.svg#speed" x="0" y="0" />
+								</svg>
+							</div>
+							<p class="advantages-list__label" data-translate="advantage-1">Работает быстро</p>
+						</li>
+						<li class="advantages-list__item">
+							<div class="icon-fill">
+								<svg class="icon-fill__icon icon" aria-hidden="true">
+									<use href="sprite.svg#enabling" x="0" y="0" />
+								</svg>
+							</div>
+							<p class="advantages-list__label" data-translate="advantage-2">Легко подключается</p>
+						</li>
+						<li class="advantages-list__item">
+							<div class="icon-fill">
+								<svg class="icon-fill__icon icon" aria-hidden="true">
+									<use href="sprite.svg#open-castle" x="0" y="0" />
+								</svg>
+							</div>
+							<p class="advantages-list__label" data-translate="advantage-3">Доступ к контенту из любой страны</p>
+						</li>
+						<li class="advantages-list__item">
+							<div class="icon-fill">
+								<svg class="icon-fill__icon icon" aria-hidden="true">
+									<use href="sprite.svg#chat" x="0" y="0" />
+								</svg>
+							</div>
+							<p class="advantages-list__label" data-translate="advantage-4">Поддержка отвечает как знакомые из чата</p>
+						</li>
+					</ul>
+					<div class="attention">
+						<svg class="attention__icon icon" aria-hidden="true">
+							<use href="sprite.svg#attention" x="0" y="0" />
+						</svg>
+						<div>
+							<p class="attention__title" data-translate="attention-title">А еще, Fagot VPN — это про выбор</p>
+							<p class="attention__description" data-translate="attention-description">
+								Захочешь сменить локацию — два клика и ты уже «в другой стране». А если понадобится
+								помощь — просто напиши, мы рядом. Для тех, кто ценит время, безопасность и свободу.
+								Для тебя, для People.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section price" data-js-price>
+				<div class="price__inner">
+					<div class="container">
+						<div class="heading">
+							<h2 class="h2" data-translate="price-title">Бесплатный VPN для всех</h2>
+							<p class="heading__subtitle" data-translate="price-subtitle">
+								Акция никаких платных подписок — просто подключайся и пользуйся без ограничений!
+							</p>
+						</div>
+						<div class="free-plan-container" style="display: flex; justify-content: center; padding: 2rem 0;">
+							<article class="price-card" style="max-width: 400px; text-align: center; padding: 2.5rem; background: linear-gradient(135deg, rgba(254, 88, 139, 0.15), rgba(138, 103, 254, 0.15)); border: 2px solid rgba(138, 103, 254, 0.3); border-radius: 24px;">
+								<span class="price-card__popular" data-translate="plan-free-badge" style="position: static; display: inline-block; margin-bottom: 1rem;">100% Бесплатно</span>
+								<h3 class="h4" data-translate="plan-free" style="margin-bottom: 0.5rem; background: linear-gradient(135deg, #FE588B, #8A67FE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Полный доступ</h3>
+								<p class="price-card__details" data-translate="plan-free-details" style="font-size: 1.1rem; opacity: 0.8; margin-bottom: 1.5rem;">Навсегда бесплатно</p>
+								<ul class="checklist" style="text-align: left; margin-bottom: 0;">
+									<li class="checklist__item" data-translate="plan-feature-1">До 10 устройств</li>
+									<li class="checklist__item" data-translate="plan-feature-2">Сервера с низкой задержкой</li>
+									<li class="checklist__item" data-translate="plan-feature-3">Выбор локации из 30+ стран</li>
+									<li class="checklist__item" data-translate="plan-feature-4">Поддержка в Telegram</li>
+									<li class="checklist__item" data-translate="plan-feature-5">Безлимитный трафик</li>
+									<li class="checklist__item" data-translate="plan-feature-6">Без рекламы</li>
+								</ul>
+							</article>
+						</div>
+						<div class="connect">
+							
+							
+							<article class="connect__card-secondary">
+								<div class="connect__card-secondary-body">
+									<h3 class="connect__card-secondary-title h4">
+										Получить VPN
+									</h3>
+									<p class="connect__card-secondary-description" data-translate="app-install-description">
+										Устанавливается вручную, приложение само проверяет обновления.
+									</p>
+								</div>
+								<a
+									href="https://api.memory.mts.ru/api/1.0/download/link/content/SY5VoQlI8kuzOnCAHeD5IA"
+									target="_blank"
+									class="button-text-icon button-text-icon_gradient button-text-icon_mobile-full"
+								>
+									
+									<span class="button-text-icon__text" data-translate="download">Скачать</span>
+								</a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section faq">
+				<div class="container">
+					<div class="heading">
+						<h2 class="h2" data-translate="faq-title">Ответы на частые вопросы</h2>
+					</div>
+					<div class="details" data-js-details>
+					<sl-details class="details__item" data-js-details-item>
+						<p slot="summary" class="h6" data-translate="faq-1-question">
+							Как работает ИИ-оптимизация?
+						</p>
+						<div slot="expand-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<div slot="collapse-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<span data-translate="faq-1-answer">Наш искусственный интеллект анализирует состояние сети в реальном времени и автоматически выбирает оптимальный маршрут для вашего трафика, обеспечивая максимальную скорость и стабильность соединения.</span>
+					</sl-details>
+					<sl-details class="details__item" data-js-details-item>
+						<p slot="summary" class="h6" data-translate="faq-2-question">
+							Можно ли использовать на нескольких устройствах?
+						</p>
+						<div slot="expand-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<div slot="collapse-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<span data-translate="faq-2-answer">Да, вы можете подключить неограниченное количество устройств к вашему серверу. Поделитесь доступом с семьей и друзьями — ограничений нет.</span>
+					</sl-details>
+					<sl-details class="details__item" data-js-details-item>
+						<p slot="summary" class="h6" data-translate="faq-3-question">
+							Какие платформы поддерживаются?
+						</p>
+						<div slot="expand-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<div slot="collapse-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<span data-translate="faq-3-answer">Мы предоставляем приложения для Android. Также возможна настройка на роутере для защиты всей домашней сети.</span>
+					</sl-details>
+					<sl-details class="details__item" data-js-details-item>
+						<p slot="summary" class="h6" data-translate="faq-4-question">
+							Есть ли ограничения по трафику?
+						</p>
+						<div slot="expand-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<div slot="collapse-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<span data-translate="faq-4-answer">Нет, мы не ограничиваем объем трафика. Пользуйтесь VPN без лимитов — это полностью бесплатно!</span>
+					</sl-details>
+					<sl-details class="details__item" data-js-details-item>
+						<p slot="summary" class="h6" data-translate="faq-5-question">
+							Почему VPN бесплатный?
+						</p>
+						<div slot="expand-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<div slot="collapse-icon">
+							<svg class="details__icon icon" aria-hidden="true">
+								<use href="sprite.svg#arrow-down" x="0" y="0" />
+							</svg>
+						</div>
+						<span data-translate="faq-5-answer">Мы верим, что каждый заслуживает безопасный и приватный доступ в интернет. Fagot VPN поддерживается сообществом и партнёрами, поэтому мы можем предоставлять сервис бесплатно без рекламы и ограничений.</span>
+					</sl-details>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__main">
+				<a class="logo" href="/">
+					<img
+						class="logo__img"
+						src="logo.png"
+						alt="Fagot VPN"
+						width="143"
+						height="40"
+						loading="lazy"
+					/>
+				</a>
+		<small class="footer__legal">© 2025 <span class="footer__company">PIPL NETWORK LLC</span></small>
+		
+			</div>
+		</footer>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function(m,e,t,r,i,k,a){
+				m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+				m[i].l=1*new Date();
+				for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+				k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+			})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106050194', 'ym');
 
-      /* Кастомный градиент для кнопок */
-      .bg-premium-gradient {
-        background: linear-gradient(135deg, #1a1a1a 0%, #374151 100%);
-      }
-      .bg-premium-gradient:hover {
-        background: linear-gradient(135deg, #374151 0%, #1a1a1a 100%);
-      }
-
-      /* Мягкая тень для контейнера */
-      .premium-shadow {
-        box-shadow:
-          0 20px 40px -5px rgba(0, 0, 0, 0.08),
-          0 10px 15px -5px rgba(0, 0, 0, 0.04);
-      }
-
-      /* Выделенные (приоритетные) локации - они кликабельные */
-      .priority-card {
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-      .priority-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-      }
-
-      /* Стандартные карточки локаций - НЕ кликабельные, без эффекта наведения */
-      .location-card-static {
-        cursor: default;
-        transition: border-color 0.2s ease;
-      }
-      .location-card-static:hover {
-        border-color: #d1d5db; /* Только легкое изменение рамки, чтобы не казалось кнопкой */
-      }
-    </style>
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108671171', 'ym');
-
-    ym(108671171, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/108671171" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  </head>
-  <body class="flex justify-center min-h-screen animated-bg">
-    <div
-      class="w-full max-w-[480px] bg-white min-h-screen flex flex-col premium-shadow overflow-hidden relative z-10"
-    >
-      <header
-        class="flex justify-between items-center px-6 py-6 border-b border-gray-100"
-      >
-        <div class="flex items-center gap-2">
-          <div class="w-3 h-6 bg-premium-gradient rounded-full"></div>
-          <span
-            class="text-2xl font-extrabold tracking-tighter uppercase text-gray-950"
-            >HOMO VPN</span
-          >
-        </div>
-        <a
-          href="https://api.memory.mts.ru/api/1.0/download/link/content/6FeUjTfqvUSEzNYzw3JzVQ"
-          class="text-xs font-bold bg-premium-gradient text-white px-5 py-2.5 rounded-full uppercase tracking-wider premium-shadow transition hover:opacity-90 active:scale-95"
-        >
-          Скачать
-        </a>
-      </header>
-
-      <section class="px-6 py-12 bg-gray-50/50">
-        <h1
-          class="text-5xl font-extrabold leading-[1.05] tracking-tighter mb-8 text-gray-950"
-        >
-          Твой интернет.<br />
-          <span class="text-gray-400">Свободный.</span><br />
-          Быстрый.<br />
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-500"
-            >Бесплатный.</span
-          >
-        </h1>
-        <a
-          href="https://api.memory.mts.ru/api/1.0/download/link/content/6FeUjTfqvUSEzNYzw3JzVQ"
-          class="block w-full"
-        >
-          <button
-            class="w-full bg-premium-gradient text-white font-extrabold py-5 rounded-2xl text-lg uppercase tracking-wider premium-shadow transition hover:opacity-95 active:scale-[0.98]"
-          >
-            Подключиться
-          </button>
-        </a>
-      </section>
-
-      <section class="px-6 py-10 flex-grow">
-        <div class="flex items-center justify-between mb-6">
-          <h2 class="text-3xl font-extrabold tracking-tight text-gray-950">
-            29+ локаций
-          </h2>
-          <span class="text-sm font-semibold text-gray-500"
-            >Скорость:
-            <span class="text-green-600 font-bold">1 Гбит/с</span></span
-          >
-        </div>
-
-        <div class="space-y-4">
-          <div
-            class="priority-card flex items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white premium-shadow"
-          >
-            <div class="flex items-center gap-4">
-              <span class="text-2xl">⚡️</span>
-              <div>
-                <span class="block font-bold text-lg text-gray-950"
-                  >Умная локация</span
-                >
-                <span class="block text-sm font-medium text-gray-500"
-                  >Автовыбор: Восток</span
-                >
-              </div>
-            </div>
-            <span
-              class="w-3 h-3 rounded-full bg-green-500 ring-4 ring-green-100"
-            ></span>
-          </div>
-
-          <div
-            class="priority-card flex items-center justify-between p-5 rounded-2xl border border-gray-100 bg-white premium-shadow"
-          >
-            <div class="flex items-center gap-4">
-              <span class="text-2xl">🇷🇺</span>
-              <div>
-                <span class="block font-bold text-lg text-gray-950"
-                  >Нидерланды (игровая)</span
-                >
-                <span class="block text-sm font-medium text-gray-500"
-                  >Минимальный пинг</span
-                >
-              </div>
-            </div>
-            <span
-              class="w-3 h-3 rounded-full bg-green-500 ring-4 ring-green-100"
-            ></span>
-          </div>
-
-          <div class="relative py-2">
-            <div class="absolute inset-0 flex items-center" aria-hidden="true">
-              <div class="w-full border-t border-gray-100"></div>
-            </div>
-            <div class="relative flex justify-center">
-              <span class="bg-white px-3 text-sm font-semibold text-gray-400"
-                >Доступные страны</span
-              >
-            </div>
-          </div>
-
-          <div
-            class="grid grid-cols-2 gap-3 text-base font-semibold text-gray-800"
-          >
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇳🇱 Нидерланды
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🌐 Умная локация
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇫🇮 Финляндия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇩🇪 Германия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇺🇸 США
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇦🇪 ОАЭ
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇱🇹 Литва
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇬🇧 Великобрит...
-            </div>
-          </div>
-
-          <div
-            id="hidden-locations"
-            class="hidden grid grid-cols-2 gap-3 mt-3 text-base font-semibold text-gray-800"
-          >
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇳🇴 Норвегия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇸🇪 Швеция
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇲🇩 Молдова
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇫🇷 Франция
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇨🇭 Швейцария
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇵🇱 Польша
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇹🇷 Турция
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇮🇳 Индия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇧🇷 Бразилия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇷🇺 Россия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇯🇵 Япония
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇭🇰 Гонконг
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇨🇦 Канада
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇮🇪 Ирландия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇮🇹 Италия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇰🇿 Казахстан
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇰🇷 Южная Корея
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white"
-            >
-              🇦🇺 Австралия
-            </div>
-            <div
-              class="location-card-static p-4 rounded-xl border border-gray-100 bg-white col-span-2 text-center"
-            >
-              🇦🇱 Албания
-            </div>
-          </div>
-
-          <button
-            id="toggle-btn"
-            onclick="toggleLocations()"
-            class="w-full mt-4 py-4 rounded-xl border-2 border-gray-900 text-gray-900 font-bold text-sm uppercase tracking-wide hover:bg-gray-900 hover:text-white transition-colors flex items-center justify-center gap-2"
-          >
-            <span>Развернуть все локации</span>
-            <svg
-              id="toggle-icon"
-              class="w-4 h-4 transition-transform duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </section>
-
-      <footer
-        class="px-6 py-8 text-center text-gray-400 text-sm border-t border-gray-100 bg-gray-50/50 font-medium space-y-2 mt-auto"
-      >
-        <p>Homo VPN — Твой премиум доступ к интернету.</p>
-        <p class="text-xs text-gray-300">
-          © 2024 Homo VPN. Все права защищены.
-        </p>
-      </footer>
-    </div>
-
-    <script>
-      function toggleLocations() {
-        const hiddenGrid = document.getElementById("hidden-locations");
-        const btnText = document.querySelector("#toggle-btn span");
-        const btnIcon = document.getElementById("toggle-icon");
-
-        if (hiddenGrid.classList.contains("hidden")) {
-          // Показываем
-          hiddenGrid.classList.remove("hidden");
-          btnText.textContent = "Скрыть локации";
-          btnIcon.classList.add("rotate-180");
-        } else {
-          // Скрываем
-          hiddenGrid.classList.add("hidden");
-          btnText.textContent = "Развернуть все локации";
-          btnIcon.classList.remove("rotate-180");
-
-          // Легкий скролл назад к началу списка при скрытии
-          document
-            .getElementById("toggle-btn")
-            .scrollIntoView({ behavior: "smooth", block: "end" });
-        }
-      }
-    </script>
-  </body>
+			ym(106050194, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/106050194" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		
+		<!-- Scroll Reveal Animations -->
+		<script>
+			(function() {
+				// Elements to animate on scroll (exclude hero)
+				const sections = document.querySelectorAll('.section:not(.hero)');
+				const listItems = document.querySelectorAll('.advantages-list__item, .features__item');
+				
+				// Intersection Observer for sections
+				const sectionObserver = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							sectionObserver.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.15,
+					rootMargin: '0px 0px -80px 0px'
+				});
+				
+				// Intersection Observer for list items
+				const itemObserver = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('visible');
+							itemObserver.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.2,
+					rootMargin: '0px 0px -50px 0px'
+				});
+				
+				// Observe sections
+				sections.forEach(section => {
+					sectionObserver.observe(section);
+				});
+				
+				// Observe list items
+				listItems.forEach(item => {
+					itemObserver.observe(item);
+				});
+				
+				// Smooth scroll for all internal links
+				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+					anchor.addEventListener('click', function(e) {
+						const href = this.getAttribute('href');
+						if (href !== '#') {
+							e.preventDefault();
+							const target = document.querySelector(href);
+							if (target) {
+								target.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								});
+							}
+						}
+					});
+				});
+				
+				// Subtle parallax effect on hero background
+				const heroInner = document.querySelector('.hero__inner');
+				if (heroInner) {
+					let ticking = false;
+					window.addEventListener('scroll', () => {
+						if (!ticking) {
+							requestAnimationFrame(() => {
+								const scrolled = window.pageYOffset;
+								if (scrolled < 600) {
+									heroInner.style.transform = 'translateY(' + (scrolled * 0.15) + 'px)';
+									heroInner.style.opacity = 1 - (scrolled / 800);
+								}
+								ticking = false;
+							});
+							ticking = true;
+						}
+					}, { passive: true });
+				}
+			})();
+		</script>
+		
+		<!-- Floating Particles -->
+		<script>
+			(function() {
+				const particlesContainer = document.getElementById('particles');
+				const particleCount = 30;
+				
+				for (let i = 0; i < particleCount; i++) {
+					const particle = document.createElement('div');
+					particle.className = 'particle';
+					
+					// Random position
+					particle.style.left = Math.random() * 100 + '%';
+					
+					// Random size (2-6px)
+					const size = Math.random() * 4 + 2;
+					particle.style.width = size + 'px';
+					particle.style.height = size + 'px';
+					
+					// Random animation duration (15-35s)
+					const duration = Math.random() * 20 + 15;
+					particle.style.animationDuration = duration + 's';
+					
+					// Random delay
+					particle.style.animationDelay = Math.random() * 20 + 's';
+					
+					// Random opacity
+					particle.style.opacity = Math.random() * 0.5 + 0.1;
+					
+					particlesContainer.appendChild(particle);
+				}
+			})();
+		</script>
+		
+		<!-- FAQ Accordion Enhancement -->
+		<script>
+			(function() {
+				// Make FAQ accordion close others when opening new one
+				const faqItems = document.querySelectorAll('.details__item');
+				
+				faqItems.forEach(item => {
+					item.addEventListener('sl-show', () => {
+						faqItems.forEach(other => {
+							if (other !== item && other.open) {
+								other.hide();
+							}
+						});
+					});
+				});
+			})();
+		</script>
+		
+		<!-- Cookie Consent Popup -->
+		<div class="cookie-popup" id="cookiePopup">
+			<div class="cookie-popup__content">
+				<div class="cookie-popup__icon">🍪</div>
+				<div class="cookie-popup__text">
+					<p class="cookie-popup__title" data-translate="cookie-title">Мы используем cookies</p>
+					<p class="cookie-popup__description"><span data-translate="cookie-description">Для улучшения работы сайта и персонализации контента мы используем файлы cookie.</span> <a href="/privacy" class="cookie-popup__link" data-translate="cookie-link">Подробнее</a></p>
+				</div>
+				<div class="cookie-popup__buttons">
+					<button class="cookie-popup__btn cookie-popup__btn--accept" onclick="acceptCookies()" data-translate="cookie-accept">Принять</button>
+					<button class="cookie-popup__btn cookie-popup__btn--decline" onclick="declineCookies()" data-translate="cookie-decline">Отклонить</button>
+				</div>
+			</div>
+		</div>
+		
+		<style>
+			.cookie-popup {
+				position: fixed;
+				bottom: 24px;
+				left: 24px;
+				right: 24px;
+				z-index: 9999;
+				display: none;
+				animation: cookieSlideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.cookie-popup.show {
+				display: block;
+			}
+			
+			@keyframes cookieSlideUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			.cookie-popup__content {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px 24px;
+				background: rgba(30, 30, 40, 0.95);
+				backdrop-filter: blur(20px);
+				-webkit-backdrop-filter: blur(20px);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 16px;
+				box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(254, 88, 139, 0.1);
+				display: flex;
+				align-items: center;
+				gap: 16px;
+				flex-wrap: wrap;
+			}
+			
+			.cookie-popup__icon {
+				font-size: 32px;
+				line-height: 1;
+				flex-shrink: 0;
+			}
+			
+			.cookie-popup__text {
+				flex: 1;
+				min-width: 200px;
+			}
+			
+			.cookie-popup__title {
+				font-size: 16px;
+				font-weight: 600;
+				color: #fff;
+				margin-bottom: 4px;
+			}
+			
+			.cookie-popup__description {
+				font-size: 13px;
+				color: rgba(255, 255, 255, 0.7);
+				line-height: 1.5;
+			}
+			
+			.cookie-popup__buttons {
+				display: flex;
+				gap: 10px;
+				flex-shrink: 0;
+			}
+			
+			.cookie-popup__btn {
+				padding: 10px 20px;
+				border-radius: 10px;
+				font-size: 14px;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				border: none;
+			}
+			
+			.cookie-popup__btn--accept {
+				background: linear-gradient(135deg, #FE588B, #8A67FE);
+				color: #fff;
+			}
+			
+			.cookie-popup__btn--accept:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 8px 25px rgba(254, 88, 139, 0.4);
+			}
+			
+			.cookie-popup__btn--decline {
+				background: rgba(255, 255, 255, 0.1);
+				color: rgba(255, 255, 255, 0.8);
+				border: 1px solid rgba(255, 255, 255, 0.15);
+			}
+			
+			.cookie-popup__btn--decline:hover {
+				background: rgba(255, 255, 255, 0.15);
+				color: #fff;
+			}
+			
+			.cookie-popup__link {
+				color: #FE588B;
+				text-decoration: none;
+				font-weight: 500;
+				transition: color 0.3s ease;
+			}
+			
+			.cookie-popup__link:hover {
+				color: #8A67FE;
+				text-decoration: underline;
+			}
+			
+			@media (max-width: 600px) {
+				.cookie-popup {
+					bottom: 16px;
+					left: 16px;
+					right: 16px;
+				}
+				
+				.cookie-popup__content {
+					padding: 16px;
+					flex-direction: column;
+					text-align: center;
+				}
+				
+				.cookie-popup__buttons {
+					width: 100%;
+					justify-content: center;
+				}
+				
+				.cookie-popup__btn {
+					flex: 1;
+				}
+			}
+		</style>
+		
+		<script>
+			(function() {
+				const cookiePopup = document.getElementById('cookiePopup');
+				const cookieConsent = localStorage.getItem('cookieConsent');
+				
+				if (!cookieConsent) {
+					setTimeout(() => {
+						cookiePopup.classList.add('show');
+					}, 1500);
+				}
+			})();
+			
+			function acceptCookies() {
+				localStorage.setItem('cookieConsent', 'accepted');
+				hideCookiePopup();
+			}
+			
+			function declineCookies() {
+				localStorage.setItem('cookieConsent', 'declined');
+				hideCookiePopup();
+			}
+			
+			function hideCookiePopup() {
+				const popup = document.getElementById('cookiePopup');
+				popup.style.animation = 'cookieSlideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+				setTimeout(() => {
+					popup.classList.remove('show');
+				}, 300);
+			}
+			
+			// Add slide down animation
+			const style = document.createElement('style');
+			style.textContent = `
+				@keyframes cookieSlideDown {
+					from { opacity: 1; transform: translateY(0); }
+					to { opacity: 0; transform: translateY(30px); }
+				}
+			`;
+			document.head.appendChild(style);
+		</script>
+	</body>
 </html>
